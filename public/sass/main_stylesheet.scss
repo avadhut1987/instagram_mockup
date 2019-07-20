@@ -1,0 +1,140 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+body {
+	min-height: 1000px;
+}
+body, .navbar {
+	background: white !important;
+}
+.btn {
+	cursor: pointer;
+}
+.btn:focus, .btn:hover {
+	box-shadow: none !important;
+	outline: none;
+}
+.btn-light:hover {
+	background-color: white !important;
+	border-color: white;
+}
+.btn:active {
+	box-shadow: inset -6px -10px 20px 0px rgba(0,0,0,0.2) !important;
+}
+
+// Navigation Bar
+.main-navbar {
+	padding: 8px 40px !important;
+} 
+.nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar-brand {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.nav-item {
+	margin: auto 8px;
+}
+.nav-link {
+	background: url(../img/instagram.png);
+	background-repeat: no-repeat;
+	height: 24px;
+	padding: 8px 12px;
+}
+.logo {
+	background-position:  -258px -201px;
+}
+.logo_text {
+	margin-left: 12px;
+	background-position: -74px -200px;
+	width: 103px;
+}
+.homeIcon {
+	background-position: -26px -300px;
+}
+.homeIcon:focus {
+	background-position: -290px -248px;
+}
+.search {
+	background-position: -130px -326px;
+}
+.search:focus {
+	background-position: -102px -326px;
+}
+.videos {
+	background-position: -104px -301px;
+}
+.videos:focus {
+	background-position: -78px -301px;
+}
+.favorite {
+	background-position: -312px -274px;
+}
+.favorite:focus {
+	background-position: -260px -274px;
+}
+.chat {
+	background-position: -152px -232px;
+	width: 24px;
+}
+.myStory {
+	margin: 5px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-position: -153px -269px;
+	overflow: hidden;
+}
+.myDP {
+	width: 200%;
+	height: 200%;
+
+}
+
+//  Side Buttons
+.sidebar {
+	position: fixed;
+	top: 35vh;
+	right: 0;
+}
+
+.btnGrid3 {
+	padding: 0;
+	border: none;
+	width: 24px !important;
+	height: 24px !important;
+}
+.grid3 {
+	width: 100%;
+	height: 100%;
+	stroke: gray;
+}
+
+.grid2 {
+	width: 100%;
+	height: 100%;
+	stroke: black;
+}
+
+
+@media (max-width: 576px) {
+	.nav {
+		justify-content: flex-start;
+	}
+	.logo_text {
+		display: none;
+	}
+	.main-navbar {
+		padding: 8px 15px !important;
+	}
+	.logo_text {
+		display: none;
+		visibility: hidden;
+	}
+	.sidebar {
+		visibility: hidden;
+	}
+}

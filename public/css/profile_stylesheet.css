@@ -1,0 +1,171 @@
+
+.btn:hover, .btn-focus {
+	color: white;
+}
+
+.storyOutlineLast:hover {
+	color: black;
+}
+
+/* Main ContaineaddBtn  */
+.main-container.container {
+	padding-right: 45px;
+	padding-left: 20px;
+}
+.topMargin {
+	margin-top: 100px;
+}
+
+.myProfile {
+	width: 290px;
+}
+.profilePicCircle {
+	margin: 1em auto;
+	width: 70px !important;
+	height: 70px !important;
+	border-radius: 50%;
+	padding: 8px;
+	background: url(../img/circle_darker.png);
+	background-size: cover;
+	background-position: center center;
+}
+.myPhoto {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.2);
+}
+.activity {
+	padding: 5px;
+	text-align: center;
+
+}
+.number {
+	font-weight: 500;
+}
+.text {
+	color: gray;
+	font-size: 12px;
+}	
+.followMe {
+	width: 85%;
+	margin: 15px 25px;
+	background-color: #458eff;
+	color: white;
+}
+.profileDetails {
+	margin: 25px;
+	font-size: 12px;
+}
+.profileInterests {
+	padding: 5px 0;
+}
+.profileName {
+	font-size: 12px;
+}
+
+
+/* Stories */
+.stories {
+	margin: 0;
+	margin-top: 20px;
+	height: fit-content;
+	padding: 0 25px;
+	justify-content: space-between;		
+}
+/* Story */
+.storyOutline {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid rgb(212, 212, 212);
+	position: relative;
+}
+.story {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgb(212, 212, 212);
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	left: 3px;
+	bottom: 3px;
+}
+.storyText {
+	font-size: 12px;
+	color: gray;
+	margin: 12px auto;
+	text-align: center;
+}
+
+/* Play All Button */
+.storyOutlineLast {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid rgb(66, 66, 66);
+}
+.fa-play {
+	font-size: 12px !important;
+}
+.watchAllText {
+	font-weight: 500;
+}
+
+
+/* Grid System  */
+.gridContainer{
+	/* margin: 0 2em; */
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.col-lg-4, .col-md-6, .col-6 {
+	text-align: center;
+	padding: 10px !important;
+}
+.img {
+	width: 100%;
+	padding-bottom: 100%;
+	height: 0; 
+}
+
+
+/* Media query */
+@media (max-width: 576px) {
+	.main-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+
+	.myProfile {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+		justify-content: center;
+	}
+	.stories {
+		padding: 0;
+	}
+	.storyContainer:nth-child(6), .storyContainer:nth-child(7),.storyContainer:nth-child(8) {
+		display: none !important;
+	}
+
+	.followMe {
+		margin: 16px 0;
+		width: 100%;
+	}
+
+	.profileDetails {
+		margin: 25px 0;
+	}
+
+
+	.gridContainer {
+		margin: 10px auto;
+	}
+}
+
